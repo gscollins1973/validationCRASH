@@ -1,5 +1,3 @@
-rm(list = ls())
-
 ### Code to create Supplementary Figure 2, Supplementary Table 2
 ### The CRASH-2 and CRASH-3 data used in this paper are freely 
 ### available at https://freebird.lshtm.ac.uk. 
