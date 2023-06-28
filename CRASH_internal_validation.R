@@ -1,7 +1,3 @@
-rm(list = ls())
-setwd('/Users/collinsg/OneDrive - Nexus365/CSM/research/Data/CRASH data/CRASH-2//')
-#setwd('/Users/gary/OneDrive - Nexus365/CSM/research/Data/CRASH data/CRASH-2//')
-
 suppressPackageStartupMessages({
   suppressWarnings({
     library(tidyverse)
