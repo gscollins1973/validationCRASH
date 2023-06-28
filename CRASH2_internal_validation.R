@@ -4,8 +4,6 @@ rm(list = ls())
 ### The CRASH-2 and CRASH-3 data used in this paper are freely 
 ### available at https://freebird.lshtm.ac.uk. 
 
-#setwd('/Users/collinsg/OneDrive - Nexus365/CSM/research/Data/CRASH data/CRASH-2//')
-setwd('/Users/gary/OneDrive - Nexus365/CSM/research/Data/CRASH data/CRASH-2//')
 set.seed(1234)
 
 suppressPackageStartupMessages({
@@ -26,15 +24,11 @@ cstat <- function(prob, y) {
 }
 
 ### DEVELOPMENT DATA
-#setwd('/Users/collinsg/Library/CloudStorage/OneDrive-Nexus365/CSM/research/Data/CRASH data/CRASH-2')
-setwd('/Users/gary/Library/CloudStorage/OneDrive-Nexus365/CSM/research/Data/CRASH data/CRASH-2')
 CRASH2 <- read_xlsx("CRASH-2 data_0.xlsx")
 CRASH2$sex <- rep(0, nrow(CRASH2))
 CRASH2$sex[CRASH2$isex == 1] <- 1
 
 ### VALIDATION DATA
-#setwd("/Users/collinsg/Library/CloudStorage/OneDrive-Nexus365/CSM/research/Data/CRASH data/CRASH-3")
-setwd("/Users/gary/Library/CloudStorage/OneDrive-Nexus365/CSM/research/Data/CRASH data/CRASH-3")
 CRASH3.orig <- read_xlsx("CRASH-3_dataset_anonymised_for_Freebird.xlsx")
 CRASH3.orig$sex2 <- rep(0, nrow(CRASH3.orig))
 CRASH3.orig$sex2[CRASH3.orig$sex == 'Male'] <- 1
